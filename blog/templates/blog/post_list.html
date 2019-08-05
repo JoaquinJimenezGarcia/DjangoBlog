@@ -1,1 +1,10 @@
-<h1>Workin'</h1>
+<div>
+    <h1><a href="/"> Tech in Polski </a></h1>
+</div>
+{% for post in posts %} 
+<div>
+    <p> publicado: {{ post.timestamp }} </p>
+    <h2><a href=""> {{ post.title }} </a></h2>
+    <p>{{ post.body|linebreaksbr }} </p>
+</div>
+{% endfor %}
